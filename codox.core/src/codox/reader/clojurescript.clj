@@ -55,7 +55,6 @@
          (remove :protocol)
          (remove :anonymous)
          (remove no-doc?)
-         (remove :anonymous)
          (map (partial read-var file vars))
          (sort-by (comp str/lower-case :name)))))
 
